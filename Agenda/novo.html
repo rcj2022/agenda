@@ -5,13 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="agenda.css">
-  
+
 </head>
 
-<body>
-    <h1>Novo</h1>
+<body id="novo">
+    <div class="elementoForm">
+       
 
-    <script src="agenda.js" type="module"></script>
+        <div class="campoForm">
+            <label>Nome</label>
+            <input type="text" name="f_nome" id="f_nome">
+        </div>
+        <div class="campoForm">
+            <label>Celular</label>
+            <input type="text" name="f_cel" id="f_cel">
+        </div>
+        <div class="campoForm">
+            <label>Email</label>
+            <input type="email" name="f_email" id="f_email">
+        </div>
+        <div class="campoForm">
+            <label>Nascimento</label>
+            <input type="tel" name="f_nasc" id="f_nasc">
+        </div>
+    </div>
+    <div class="botoesForm">
+        <button class="btn_geral" id="btn_gravar">Gravar</button>
+        <button class="btn_geral" id="btn_cancelar">Cancelar</button>
+    </div>
+    
+
+    <script src="novo.js" type="module"></script>
 </body>
 
 </html>

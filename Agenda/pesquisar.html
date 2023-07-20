@@ -5,14 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="agenda.css">
-  
+
 </head>
 
 <body>
-    
-    <h1>Pesquisar</h1>
 
-    <script src="agenda.js" type="module"></script>
+
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="agenda.css">
+
+    </head>
+
+    <body>
+        <div id="pesquisa">
+            <div class="campoPesq">
+                <label>ID</label>
+                <input type="radio" name="f_pesq" value="id">
+            </div>
+            <div class="campoPesq">
+                <label>Nome</label>
+                <input type="radio" name="f_pesq" value="nome" checked>
+            </div>
+            <div class="campoPesq">
+                <label>Data Nascimento</label>
+                <input type="radio" name="f_pesq" value="nasc">
+            </div>
+            <div class="campoPesq">
+                <label>Email</label>
+                <input type="radio" name="f_pesq" value="email">
+            </div>
+
+            <div class="campoPesq">
+                <label>Pesquisar</label>
+                <input type="text" name="f_txtpesq" id="f_txtpesq" placeholder="Digite o nome para pesquisar">
+            </div>
+            <div class="campoPesq">
+
+                <button id="btn_pesq" class="btn_geral">Pesquisar</button>
+            </div>
+
+        </div>
+        <div id="dgv" class="dgv">
+            <div id="resultado" class="resultado">
+                <div id="titulos" class="titulo">
+                    <div class="titulo c1">Id</div>
+                    <div class="titulo c2">Nome</div>
+                    <div class="titulo c3">Celular</div>
+                    <div class="titulo c4">E-mail</div>
+                    <div class="titulo c5">Data</div>
+                </div>
+                <div id="dados" class="dados">
+                    <div class="linhasdados">
+                        <!-- <div class="coluna c1">Id</div>
+                        <div class="coluna c2">Nome</div>
+                        <div class="coluna c3">Celular</div>
+                        <div class="coluna c4">E-mail</div>
+                        <div class="coluna c5">Data</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="pesquisar.js" type="module"></script>
+    </body>
+
+    </html>
+
+    <script src="pesqusar.js" type="module"></script>
 </body>
 
 </html>
